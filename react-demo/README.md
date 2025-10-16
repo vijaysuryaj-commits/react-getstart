@@ -35,7 +35,7 @@ This is called batching.
 
 binding event handlers approaches
 
-    -1>onClick={this.eventHandler.bind(this)}    //generates newer handlers on every re-render ->performance issue in large applications
+    1->onClick={this.eventHandler.bind(this)}    //generates newer handlers on every re-render ->performance issue in large applications
     2->onClick={() => this.eventHandler()}       //this also has performance implications
     3->onClick={this.eventHandler}   ->inside constructor-> add this this.evenHandler=this.eventHandler.bind(this) -> binds one time when constructor is called
     4->use arrow function as class property for eventHandler instead of using normal functions because arrow functions doesn't have their own this context it gets it from the outer scope
