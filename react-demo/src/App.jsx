@@ -1,4 +1,7 @@
 import React from "react";
+// import UserGreet from "./Class-component-examples/UserGreet";
+import ListRendering from "./Class-component-examples/ListRendering";
+import Fragments from "./Class-component-examples/Fragments";
 // import ControlledForm from "./Components/ControlledForm";
 // import Greet from "./Class-state-examples/Greet";
 // import Welcome from "./Function-useState_examples/Welcome";
@@ -89,11 +92,59 @@ import React from "react";
 // }
 // export default App;
 
-import EventHandler from "./Class-component-examples/Event_handling";
-export default function App() {
+// import EventHandler from "./Class-component-examples/Event_handling";
+// import ParentComponent from "./Class-component-examples/ParentComponent";
+// export default function App() {
+//   return (
+//     <>
+//     {/* <EventHandler/> */}
+//     {/* <ParentComponent /> */}
+//     {/* <UserGreet /> */}
+//     <ListRendering />
+//     </>
+//   )
+// }
+
+// import './stylesheets/styles.css'
+// import Inline from "./stylesheets/Inline";
+// import styles from './stylesheets/styles.module.css'
+// function App() {
+//   return (
+//     <div>
+//       <h1 className="heading">Hello</h1>
+//       <h1 className={styles.style}>Module css</h1>  {/*locally scoped */}
+//       <Inline />  {/*the styles.css also can be use din child component using the className */}
+//     </div>
+//   )
+// }
+
+// export default App
+
+// import LifecycleA from "./Class-component-examples/LifecycleA";
+
+// function App() {
+//   return (
+//     <div>
+//       <LifecycleA />
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import Table from "./Class-component-examples/Table";
+// import PureComp from "./Class-component-examples/PureComponent";
+// import RegularComponent from "./Class-component-examples/RegularComponent";
+import ParentComponent from "./Class-component-examples/ParentComponent";
+function App() {
   return (
-    <>
-    <EventHandler/>
-    </>
+    <div>
+      {/* <Fragments /> */}
+      {/* <Table /> */}
+      <ParentComponent />
+    </div>
   )
 }
+
+export default App

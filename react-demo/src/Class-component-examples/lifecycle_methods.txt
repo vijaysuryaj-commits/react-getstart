@@ -1,0 +1,56 @@
+mounting phase
+1. constructor()
+
+first method called, used to set initial state and to bind methods
+
+2. static getDerivedStateFromProps(props, state)
+
+called before render, rare use, used to update state from props, no access to this because of static
+
+3. render()
+
+required method, returns JSX (UI)
+
+4. componentDidMount()
+
+called once after initial render, good for: API calls
+
+updating phase
+5. shouldComponentUpdate(nextProps, nextState)
+
+controls re-render, return true to update, false to skip, for performance optimization
+
+6. getSnapshotBeforeUpdate(prevProps, prevState)
+
+called before DOM updates, return value passed to componentDidUpdate, rarely used
+
+7. componentDidUpdate(prevProps, prevState, snapshot)
+called after update (re-render), good for: comparing props/state
+
+unmounting phase
+
+8. componentWillUnmount()
+
+called before component is removed, good for cleanup: timers, listeners, etc.
+
+Error handling phase
+componentDidCatch(error, info)
+
+error boundary method, catches errors in child components
+
+order of execution
+Mounting:
+  - constructor()
+  - getDerivedStateFromProps()
+  - render()
+  - componentDidMount()
+
+Updating:
+  - getDerivedStateFromProps()
+  - shouldComponentUpdate()
+  - render()
+  - getSnapshotBeforeUpdate()
+  - componentDidUpdate()
+
+Unmounting:
+  - componentWillUnmount()

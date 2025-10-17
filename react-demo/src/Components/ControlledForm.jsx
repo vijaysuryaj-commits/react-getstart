@@ -54,7 +54,6 @@ function ControlledForm(){
                 phoneNo:''
             })
         }
-        
 
     }
     function handleChange(e){

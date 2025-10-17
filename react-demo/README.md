@@ -41,3 +41,19 @@ binding event handlers approaches
     4->use arrow function as class property for eventHandler instead of using normal functions because arrow functions doesn't have their own this context it gets it from the outer scope
 
     approach 3 and 4 are optimal
+
+Conditional rendering->
+    4 ways:
+        1.if/else
+        2.element variables
+        3.ternary conditional operator
+        4.short circuit operator
+
+styling in react
+    ->regular css stylesheets
+    ->inline styling
+    ->css modules
+    ->css in js libraries
+
+    *css modules are locally scoped so it doesnt apply to child components by default
+    whereas in regular stylesheets it happes and might leadto css conflicts
